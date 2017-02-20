@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville');
+
+$sans: 'Lato', 'Arial', sans-serif;
+$serif: 'Libre Baskerville', 'Times New Roman', serif;
+
+
+$white: rgb(250,250,250);
+$black: rgb(25,25,25);
+$green: mediumseagreen;
+$red: indianred;
+
+$primarycolor: $green;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: $white;
+  background: $primarycolor;
+
+  font-family: $sans;
+  font-size: 14px;
+}
+
+section {
+  margin: 10px;
+  padding: 10px;
+}
+
+section:nth-child(even) {
+  background: rgba($black,.2);
+}
+
+section:nth-child(odd) {
+  background: rgba($black,.4);
+}
+
+article {
+  padding: 40px 60px;
+  border: 5px solid $white;
+}
+
+.headline {
+  font-size: 36px;
+  color: $white;
+  font-family: $serif;
+}
+
+.subhead {
+  font-size: 22px;
+  color: rgba($black, .5);
+  font-family: $sans;
+}
+
+.copy {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: $white;
+  font-weight: 400;
+}
+
+.date {
+  color: rgba($primarycolor, .7);
+  font-size: 14px;
+}
