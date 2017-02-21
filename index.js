@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 let paragraphs = []
 const ARTICLES = [
@@ -43,6 +44,16 @@ class Article extends React.Component {
     this.state = {
       paragraphs: [1,2,3]
     }
+  }
+
+  ComponentWillMount(){
+    axios.get('/')
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
   }
 
   render(){
