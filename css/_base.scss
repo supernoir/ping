@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,300i,400,400i,700,700i|Libre+Baskerville');
 
 $sans: 'Lato', 'Arial', sans-serif;
 $serif: 'Libre Baskerville', 'Times New Roman', serif;
@@ -8,8 +8,10 @@ $white: rgb(250,250,250);
 $black: rgb(25,25,25);
 $green: mediumseagreen;
 $red: indianred;
+$blue: powderblue;
+$purple: plum;
 
-$primarycolor: $green;
+$primarycolor: $purple;
 
 body {
   margin: 0;
@@ -19,6 +21,7 @@ body {
   background: $primarycolor;
 
   font-family: $sans;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -28,16 +31,15 @@ section {
 }
 
 section:nth-child(even) {
-  background: rgba($black,.2);
+  background: rgba($black,.4);
 }
 
 section:nth-child(odd) {
-  background: rgba($black,.4);
+  background: rgba($black,.6);
 }
 
 article {
   padding: 40px 60px;
-  border: 5px solid $white;
 }
 
 .headline {
@@ -48,18 +50,38 @@ article {
 
 .subhead {
   font-size: 22px;
-  color: rgba($black, .5);
+  color: rgba($primarycolor, .5);
   font-family: $sans;
 }
 
 .copy {
   font-size: 1.2em;
-  line-height: 1.8em;
-  color: $white;
-  font-weight: 400;
+  line-height: 1.9em;
+  color: lighten($primarycolor, .8);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-smooth: auto;
+  text-indent: 1em;
+  
+  margin-bottom: 1em;
+}
+
+
+#paragraph{
+  margin-bottom: 1em;
 }
 
 .date {
   color: rgba($primarycolor, .7);
   font-size: 14px;
+}
+
+.separator{
+  width: 100%;
+  margin: 20px 50%;
+}
+
+#icon__separator {
+  color: darken($primarycolor, 20%);
+  font-size: 30px;
 }

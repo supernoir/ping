@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,300i,400,400i,700,700i|Libre+Baskerville");
+body {
+  margin: 0;
+  padding: 0;
+  color: #fafafa;
+  background: plum;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px; }
+
+section {
+  margin: 10px;
+  padding: 10px; }
+
+section:nth-child(even) {
+  background: rgba(25, 25, 25, 0.4); }
+
+section:nth-child(odd) {
+  background: rgba(25, 25, 25, 0.6); }
+
+article {
+  padding: 40px 60px; }
+
+.headline {
+  font-size: 36px;
+  color: #fafafa;
+  font-family: "Libre Baskerville", "Times New Roman", serif; }
+
+.subhead {
+  font-size: 22px;
+  color: rgba(221, 160, 221, 0.5);
+  font-family: "Lato", "Arial", sans-serif; }
+
+.copy {
+  font-size: 1.2em;
+  line-height: 1.9em;
+  color: #dea3de;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-smooth: auto;
+  text-indent: 1em;
+  margin-bottom: 1em; }
+
+#paragraph {
+  margin-bottom: 1em; }
+
+.date {
+  color: rgba(221, 160, 221, 0.7);
+  font-size: 14px; }
+
+.separator {
+  width: 100%;
+  margin: 20px 50%; }
+
+#icon__separator {
+  color: #c255c2;
+  font-size: 30px; }
+
+/*# sourceMappingURL=desktop.css.map */
